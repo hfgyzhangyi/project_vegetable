@@ -38,7 +38,9 @@ export default {
     dealClick(e){
       var index1 = $(e.currentTarget).index();
       var index2 = $(".active").index();
-      $(".active").find("img").attr("src",require("./assets/icon_"+(index2+1)+"_1.png"));
+      if(index2!==-1){
+        $(".active").find("img").attr("src",require("./assets/icon_"+(index2+1)+"_1.png"));
+      }
       $(".active").removeClass("active");
       $(e.currentTarget).addClass("active");
       if(index1===0){
@@ -67,6 +69,9 @@ body{
       bottom: 0;
       left: 0;
       background: #21292C;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
       .tab-item{
         width: 25%;
         float: left;

@@ -6,15 +6,38 @@ import {Swipe,SwipeItem} from 'mint-ui'
 import 'mint-ui/lib/swipe/style.css'
 import 'mint-ui/lib/style.css'
 import './assets/js/global'
+import Vuex from 'vuex'
 
 Vue.config.productionTip = false
 Vue.use(MintUI)
+Vue.use(Vuex)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
+var store = new Vuex.Store({
+  state:{
+    phone_number:""
+  },
+  mutations:{
+    setPhoneNumber(state, val){
+      state.phone_number = val
+    }
+  },
+  getters:{
+    getPhoneNumber(state){
+      return state.phone_number;
+    }
+  },
+  actions:{
+    setPhoneNumberFun(context, val){
+      context.commit("setPhoneNumber", val)
+    }
+  }
+})
 
 new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 })
