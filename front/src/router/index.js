@@ -52,6 +52,31 @@ export default new Router({
       meta:{
         showTab:true
       }
+    },
+    {
+      path:'/Info1',name:'Info1',component:resolve=>require(['@/components/Info1'], resolve),meta:{showTab:false}
+    },
+    {
+      path:'/Info2',name:'Info2',component:resolve=>require(['@/components/Info2'], resolve),meta:{showTab:false}
+    },
+    {
+      path:'/Info3',name:'Info3',component:resolve=>require(['@/components/Info3'], resolve),meta:{showTab:false}
+    },
+    {
+      path: '/Shopping',
+      name: 'Shopping',
+      component: resolve=>require(['@/components/Shopping'], resolve),
+      meta:{
+        showTab:true
+      }
+    },
+    {
+      path: '/Detail',
+      name: 'Detail',
+      component: resolve=>require(['@/components/Detail'], resolve),
+      meta:{
+        showTab:false
+      }
     }
   ]
 })

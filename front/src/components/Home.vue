@@ -7,13 +7,13 @@
     </mt-swipe>
     <div class="indexNav">
       <div class="in1 fl">
-        <router-link :to="{name:'Home'}">
+        <router-link :to="{name:'Shopping'}">
           <strong class="fl">宅配<br>套餐</strong>
           <img src="../assets/icon1.png" class="fr"/>
         </router-link>
       </div>
       <div class="in2 fr">
-        <router-link :to="{name:'Home'}">
+        <router-link :to="{name:'Shopping'}">
           <strong class="fl">农场特供</strong>
           <img src="../assets/icon2.png" class="fr"/>
         </router-link>
@@ -23,7 +23,7 @@
     <div class="indexNav" style="margin-top:4px">
       <div class="in1 fr boluo"></div>
       <div class="in2 fl">
-        <router-link :to="{name:'Home'}">
+        <router-link :to="{name:'Shopping'}">
           <strong class="fl">卡券专区</strong>
           <img src="../assets/icon3.png" class="fr"/>
         </router-link>
@@ -32,19 +32,19 @@
     </div>
     <div class="indexNav" style="margin-top:4px">
       <div class="in4">
-        <router-link :to="{name:'Home'}">
+        <router-link :to="{name:'Info1'}">
           <img src="../assets/icon4.png"/>
           <span>我的农场</span>
         </router-link>
       </div>
       <div class="in4">
-        <router-link :to="{name:'Home'}">
+        <router-link :to="{name:'Info2'}">
           <img src="../assets/icon5.png"/>
           <span>养生专家</span>
         </router-link>
       </div>
       <div class="in4">
-        <router-link :to="{name:'Home'}">
+        <router-link :to="{name:'Info3'}">
           <img src="../assets/icon6.png"/>
           <span>走进农场</span>
         </router-link>
