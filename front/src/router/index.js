@@ -77,6 +77,22 @@ export default new Router({
       meta:{
         showTab:false
       }
+    },
+    {
+      path: '/Comfirm',
+      name: 'Comfirm',
+      component: resolve=>require(['@/components/Comfirm'], resolve),
+      meta:{
+        showTab:false
+      }
+    },
+    {
+      path: '/Finish',
+      name: 'Finish',
+      component: resolve=>require(['@/components/Finish'], resolve),
+      meta:{
+        showTab:false
+      }
     }
   ]
 })

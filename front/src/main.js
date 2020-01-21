@@ -7,12 +7,18 @@ import 'mint-ui/lib/swipe/style.css'
 import 'mint-ui/lib/style.css'
 import './assets/js/global'
 import Vuex from 'vuex'
+import Count from '@/components/Count'
+import Bottom from '@/components/Bottom'
+import axios from 'axios'
 
+Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.use(MintUI)
 Vue.use(Vuex)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
+Vue.component(Count.name, Count)
+Vue.component(Bottom.name, Bottom)
 var store = new Vuex.Store({
   state:{
     phone_number:""

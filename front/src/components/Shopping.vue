@@ -126,6 +126,7 @@ export default {
         }
     },
     mounted(){
+        $("body").css("background", "#fff");
         setTimeout(() => {
             var height = $(".swipe-item").children("img").height();
             $(".swipe-wrap").css("height", height);
